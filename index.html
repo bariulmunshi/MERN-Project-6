@@ -58,8 +58,26 @@ font-family: 'Work Sans', sans-serif;
             </a>
           </li>
         </ul>
-          <button class="btn btn-warning btn-lg bg-opacity-50 " type="submit">Free Consultation</button>
-      
+          <button class="btn btn-warning btn-lg bg-opacity-50 " type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Free Consultation</button>
+          <!-- Start: Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Free Consultation</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  We are ready to give you free Consultation before assigned to your task.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End: Modal  -->
       </div>
     </div>
   </nav>
@@ -203,39 +221,53 @@ font-family: 'Work Sans', sans-serif;
   <div class="row row-cols-1 row-cols-md-2">
     <div class="col">
       <div class="accordion" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item">
+        <div class="accordion-item">  
           <h2 class="accordion-header" id="panelsStayOpen-headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-              Accordion Item #1
+             1.What is the difference between CSS display flex and grid?
             </button>
           </h2>
           <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
             <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <strong>CSS Grid provides two-dimensional layout capabilities, allowing for elements to be arranged horizontally and vertically. On the other hand, CSS Flexbox provides flexibility, allowing for elements to be placed on a single axis, either horizontally or vertically.
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-              Accordion Item #2
+              2.What's the Purpse of Media Query?
             </button>
           </h2>
           <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
             <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <strong>The purpose of media queries is to allow web developers to create responsive designs for their websites that adapt to different screen sizes and devices. Media queries are used to apply different styles and layouts to a web page based on the characteristics of the device being used to view it. For example, a web developer can use media queries to create a different layout for a website when it is viewed on a smartphone compared to when it is viewed on a desktop computer. This helps ensure that the website is optimized for each device, providing the best user experience possible. 
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-              Accordion Item #3
+              3.What's CSS Box-Model?
             </button>
           </h2>
           <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <strong>The CSS Box Model is a concept used in web design to represent the properties of an HTML element and how it interacts with other elements on the page. It consists of four parts: content, padding, border, and margin.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              4.What's Semantic Tag?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <strong>In web development, semantic tags refer to HTML elements that describe the content of a web page in a structured and meaningful way. These tags provide additional information to search engines and other software about the meaning and purpose of the content on a web page.
+
+                Using semantic tags can help improve the accessibility, usability, and search engine optimization (SEO) of a web page. Some common examples of semantic tags include header, footer, nav, article, section, aside, and main. Each of these tags has a specific meaning and purpose, which helps to convey the structure and hierarchy of the content on a web page.
             </div>
           </div>
         </div>
@@ -292,15 +324,63 @@ font-family: 'Work Sans', sans-serif;
 </section>
 <!-- ===========End: Contact-Us========== -->
 
-
-
 </main>
 <!-- ============End:Main============ -->
 
- <!-- =============Start: Footer=========== -->
- <footer class="bg-black" style="height: 400px;">
-  <section>
-
+<!-- =============Start: Footer=========== -->
+<footer  >
+  <section class="bg-black text-white " >
+   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 p-5 ">
+    <div class="col">
+    <h4 class="my-5">
+      <span class="text-warning"><i class="fa-solid fa-scale-balanced"></i></span> Justice
+    </h4>
+    <p class="opacity-75" style="color: #CFCFCF; font-weight: 400;
+    font-size: 16px;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+    </div>
+    <div class="col">
+      <h4 class="my-5">
+        Useful Link
+      </h4>
+      <p class="opacity-75" style="color: #CFCFCF; font-weight: 400;
+      font-size: 16px;">
+        Homes <br>
+About Us <br>
+Cases <br>
+Blog <br> 
+Contact Us <br>
+      </p>
+    </div>
+    <div class="col">
+      <h4 class="my-5">
+        Contact Now
+      </h4>
+      <p class="opacity-75" style="color: #CFCFCF; font-weight: 400;
+      font-size: 16px;">555 4th 5t NW, Washington <br>
+        DC 20530, United States</p>
+      <p class="opacity-75" style="color: #CFCFCF; font-weight: 400;
+      font-size: 16px;">
+        +88 01750 000 000 <br>
++88 01750 000 000
+      </p>
+      <p class="opacity-75" style="color: #CFCFCF; font-weight: 400;
+      font-size: 16px;">
+        info@gmail.com <br>
+info@gmail.com
+      </p>
+    </div>
+    <div class="col">
+      <h4 class="my-5">
+        Subscribe
+      </h4>
+      <p class="opacity-75" style="color: #CFCFCF; font-weight: 400;
+      font-size: 16px;">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
+      <div class="input-group mb-3" style="background: #FFFFFF; border-radius: 8px;">
+        <input type="text" class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <span class="input-group-text bg-warning" id="basic-addon2"><i class="fa-solid fa-paper-plane"></i></span>
+      </div>
+    </div>
+   </div>
   </section>
 </footer>
 <!-- =============End: Footer=========== -->
